@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}School Admin | {{ title }}{% endblock %}
+
+{% block branding %}
+<a class="navbar-brand" href="{% url 'admin:index' %}">
+    <span class="brand-logo">📚</span>
+    <span class="brand-title">School Management</span>
+    <span class="brand-subtitle">Admin dashboard</span>
+</a>
+{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'admin/css/custom_admin.css' %}">
+{% endblock %}
