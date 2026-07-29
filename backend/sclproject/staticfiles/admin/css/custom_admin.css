@@ -1,0 +1,209 @@
+/* ===========================
+   School Admin Theme
+=========================== */
+
+:root{
+    --primary:#166534;
+    --primary-light:#22c55e;
+    --secondary:#0f172a;
+    --bg:#f4f7fb;
+    --card:#ffffff;
+    --border:#e5e7eb;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --radius:14px;
+}
+
+html,
+body{
+    min-height:100%;
+    background:linear-gradient(180deg, #eef2ff 0%, var(--bg) 45%);
+    color:var(--text);
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+body{
+    background:transparent;
+}
+
+#container{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+#header{
+    background:linear-gradient(90deg,#166534,#22c55e);
+    box-shadow:0 10px 30px rgba(22,101,52,.18);
+}
+
+#branding .inline,
+#branding .navbar-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+}
+
+.brand-logo{
+    font-size:28px;
+}
+
+.brand-title{
+    font-size:1.2rem;
+    font-weight:700;
+    letter-spacing:.02em;
+}
+
+.brand-subtitle{
+    display:block;
+    font-size:.85rem;
+    color:rgba(255,255,255,.82);
+    margin-top:2px;
+}
+
+#branding a{
+    color:#fff;
+    text-decoration:none;
+}
+
+#branding a:hover{
+    color:#f8fafc;
+}
+
+.breadcrumbs{
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    border-radius:0 0 var(--radius) var(--radius);
+}
+
+#content{
+    padding:1.3rem 1.5rem 2rem;
+}
+
+.module{
+    background:#fff;
+    border:none;
+    border-radius:var(--radius);
+    margin-bottom:20px;
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+    overflow:hidden;
+}
+
+.module caption{
+    background:linear-gradient(90deg,#166534,#22c55e);
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    padding:14px 16px;
+    letter-spacing:.01em;
+}
+
+.dashboard .module{
+    transition:.35s ease;
+}
+
+.dashboard .module:hover{
+    transform:translateY(-4px);
+}
+
+#changelist table{
+    border-collapse:separate;
+    border-spacing:0;
+}
+
+#changelist tbody tr:hover{
+    background:#f0fdf4;
+}
+
+.button,
+input[type=submit],
+.submit-row input,
+.object-tools a,
+button,
+input[type=button],
+input[type=submit]{
+    background:var(--primary);
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    padding:10px 18px;
+    box-shadow:0 10px 25px rgba(22,101,52,.16);
+    transition:transform .25s ease,background .25s ease,box-shadow .25s ease;
+}
+
+.button:hover,
+.submit-row input:hover,
+.object-tools a:hover,
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover{
+    background:#14532d;
+    transform:translateY(-2px);
+    box-shadow:0 16px 32px rgba(22,101,52,.2);
+}
+
+fieldset{
+    background:#fff;
+    border:none;
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow:0 14px 30px rgba(15,23,42,.06);
+}
+
+input,
+textarea,
+select,
+.related-widget-wrapper .related-widget,
+.select-filter,
+textarea.small,
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=url],
+input[type=search],
+select{
+    border-radius:12px !important;
+    border:1px solid #d1d5db !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none !important;
+    border-color:var(--primary-light) !important;
+    box-shadow:0 0 0 4px rgba(34,197,94,.12);
+}
+
+#footer{
+    padding:22px 0 30px;
+    text-align:center;
+    color:var(--muted);
+}
+
+a{
+    color:var(--primary);
+}
+
+a:hover{
+    color:var(--primary-light);
+}
+
+#nav-sidebar,
+#content-main,
+#footer,
+form .submit-row,
+.fieldset,
+.inline-group{
+    transition:all .25s ease;
+}
+
+@media (max-width: 900px) {
+    #branding .navbar-brand{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .brand-subtitle{
+        margin-top:4px;
+    }
+}

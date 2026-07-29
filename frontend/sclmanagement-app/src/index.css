@@ -1,0 +1,95 @@
+@import "tailwindcss";
+/* ===========================
+        Premium Scroll Progress
+=========================== */
+
+.scroll-progress-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:rgba(0,0,0,.06);
+    z-index:9999;
+}
+
+.scroll-progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e,
+        #facc15,
+        #ef4444
+    );
+
+    background-size:300% 100%;
+
+    animation:progressGradient 5s linear infinite;
+
+    border-radius:0 10px 10px 0;
+
+    transition:width .15s linear;
+
+    z-index:10000;
+
+    box-shadow:
+    0 0 10px rgba(34,197,94,.5),
+    0 0 25px rgba(239,68,68,.35);
+}
+
+.scroll-progress-glow{
+
+    position:absolute;
+
+    right:-8px;
+    top:-4px;
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+    0 0 15px #fff,
+    0 0 25px #22c55e,
+    0 0 35px #22c55e;
+
+}
+
+@keyframes progressGradient{
+
+0%{
+background-position:0% 50%;
+}
+
+100%{
+background-position:300% 50%;
+}
+
+}
+#site-header{
+
+transition:
+all .35s ease;
+
+}
+
+#site-header.scrolled{
+
+background:rgba(255,255,255,.94);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.08);
+
+border-bottom-color:#16a34a;
+
+}
