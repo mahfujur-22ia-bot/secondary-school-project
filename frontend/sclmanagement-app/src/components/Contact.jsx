@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useI18n } from "../hooks/useI18n";
-import { createContactMessage } from "../api/contactApi";
+import { createContactMessage } from "../api/contactapi";
 
 const Contact = () => {
   const { t } = useI18n();
