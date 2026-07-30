@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "../hooks/useI18n";
-import { fetchAllNotices } from "../api/noticeApi";
+import { fetchAllNotices } from "../api/noticeapi";
 
 const NoticeBoard = ({ limit }) => {
   const { t } = useI18n();
