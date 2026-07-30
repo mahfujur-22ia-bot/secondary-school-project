@@ -65,6 +65,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://secondary-school-project-1.onrender.com/",
 
 ]   
 REST_FRAMEWORK = {
