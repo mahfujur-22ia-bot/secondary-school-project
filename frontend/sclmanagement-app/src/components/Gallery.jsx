@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useI18n } from "../hooks/useI18n";
-import { fetchAllGalleryImages } from "../api/galleryApi";
+import { fetchAllGalleryImages } from "../api/galleryapi";
 
 const Gallery = ({ limit }) => {
   const { t } = useI18n();
