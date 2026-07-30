@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchAllNotices } from "../api/noticeApi";
+import { fetchAllNotices } from "../api/noticeapi";
 
 const News = () => {
   const [notices, setNotices] = useState([]);
